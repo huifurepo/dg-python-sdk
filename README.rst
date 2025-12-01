@@ -248,4 +248,5 @@ DG Python SDK
 
 详情参考SDK 接入说明_
 
-.. _接入说明: https://paas.huifu.com/docs/partners/devtools/#/sdk_python
+.. _接入说明: https://paas.huifu.com/open/doc/devtools/#/sdk_python
+
