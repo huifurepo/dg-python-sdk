@@ -1,0 +1,961 @@
+import unittest
+import dg_sdk
+import json
+from demo.demo_config import *
+
+
+def get9a918bdd38a543779d2eFe9b83f29c53():
+    dto = dict()
+    # 代发复核开关
+    # dto["agent_recheck_flag"] = ""
+    # 复核授权商户号
+    # dto["agent_recheck_huifu_id"] = ""
+    # 复核类型
+    # dto["agent_recheck_type"] = ""
+
+    return dto;
+
+def get390da42677b54b7485bf8cb7c65bcac3():
+    dto = dict()
+    # 大额支付配置列表
+    # dto["large_amt_pay_config_info_list"] = get3bf5e8be4ca5450790603710bb593daa()
+    # 交易手续费外扣huifuId交易手续费外扣时必填；&lt;font color&#x3D;&quot;green&quot;&gt;示例值：6666000108854952&lt;/font&gt;
+    # dto["out_fee_huifu_id"] = "test"
+    # 交易手续费外扣账户号交易手续费外扣时必填；&lt;font color&#x3D;&quot;green&quot;&gt;示例值：F00598602&lt;/font&gt;
+    # dto["out_fee_acct_id"] = "test"
+    # 交易手续费外扣标记
+    # dto["out_fee_flag"] = ""
+    # 商户付款方卡类型
+    # dto["mer_payer_card_type"] = ""
+
+    return json.dumps(dto)
+
+def get3bf5e8be4ca5450790603710bb593daa():
+    dto = dict()
+    # 大额支付业务模式
+    # dto["business_model"] = "test"
+    # 费率（%）开通大额业务时必须填写一种收费方式；大于0,保留2位小数；&lt;font color&#x3D;&quot;green&quot;&gt;示例值：1.00&lt;/font&gt;
+    # dto["fee_rate"] = "test"
+    # 交易手续费（固定/元）开通大额业务时必须填写一种收费方式；大于0,保留2位小数；&lt;font color&#x3D;&quot;green&quot;&gt;示例值：10.00&lt;/font&gt;
+    # dto["fee_fix_amt"] = "test"
+    # 功能开关
+    # dto["switch_state"] = ""
+    # 大额调账标识申请类型
+    # dto["biz_type"] = ""
+    # 是否允许绑卡支付
+    # dto["mer_same_card_recharge_flag"] = ""
+    # 是否允许用户入账
+    # dto["allow_user_deposit_flag"] = ""
+    # 备付金固定账号模式自动退款
+    # dto["provisions_auto_refund_flag"] = ""
+
+    dtoList = [dto]
+    return dtoList
+
+def get3edfeeec24da475cBae54c95c414c3fe():
+    dto = dict()
+    # 代发业务类型
+    # dto["surrogate_type"] = "test"
+    # 手续费（固定/元）手续费（固定/元），保留小数点后两位；fee_formula_type为05，06时必填 &lt;font color&#x3D;&quot;green&quot;&gt;示例值：1.00&lt;/font&gt;
+    # dto["fix_amt"] = "test"
+    # 手续费（百分比/%）手续费（百分比/%），保留小数点后两位；取值范围[0.00,100.00]；fee_formula_type为01，02，03，06时必填 &lt;font color&#x3D;&quot;green&quot;&gt;示例值：0.05&lt;/font&gt;
+    # dto["fee_rate"] = "test"
+    # 代发手续费计费模式01: 百分比手续费，无封顶值或保底值&lt;br/&gt;02: 百分比手续费，有保底值&lt;br/&gt;03: 百分比手续费，有封顶值&lt;br/&gt;05: 固定手续费 &lt;br/&gt;06: 固定手续费+百分比手续费&lt;br/&gt;为空默认06 &lt;font color&#x3D;&quot;green&quot;&gt;示例值：06&lt;/font&gt;
+    # dto["fee_formula_type"] = "test"
+    # 手续费封顶值（固定/元）手续费封顶值（固定/元），保留小数点后两位；fee_formula_type为03时必填 &lt;font color&#x3D;&quot;green&quot;&gt;示例值：100.00&lt;/font&gt;
+    # dto["fee_max_amt"] = "test"
+    # 手续费保底值（固定/元）手续费保底值（固定/元），保留小数点后两位；fee_formula_type为02时必填 &lt;font color&#x3D;&quot;green&quot;&gt;示例值：1.00&lt;/font&gt;
+    # dto["fee_min_amt"] = "test"
+    # 开通状态
+    # dto["switch_state"] = ""
+    # 是否交手续费外扣标记
+    # dto["out_fee_flag"] = ""
+    # 交易手续费外扣时账户类型
+    # dto["out_fee_acct_type"] = ""
+    # 交易手续费外扣汇付ID
+    # dto["out_fee_huifu_id"] = ""
+    # 是否允许对私代发
+    # dto["surrogate_private_flag"] = ""
+
+    dtoList = [dto]
+    return json.dumps(dtoList)
+
+def get72c18d3559774c35A2519d2e949c3c6f():
+    dto = dict()
+    # 借记手续费（%）借记卡费率与贷记卡费率不能同时为空;保留2位小数，最大值100.00，最小值0.00；&lt;font color&#x3D;&quot;green&quot;&gt;示例值：0.02&lt;/font&gt;
+    # dto["debit_fee_rate"] = "test"
+    # 贷记手续费（%）借记卡费率与贷记卡费率不能同时为空;保留2位小数，最大值100.00，最小值0.00；&lt;font color&#x3D;&quot;green&quot;&gt;示例值：0.06&lt;/font&gt;
+    # dto["credit_fee_rate"] = "test"
+    # 状态开关
+    # dto["switch_state"] = ""
+    # 是否交易手续费外扣
+    # dto["out_fee_flag"] = ""
+    # 交易手续费外扣汇付ID
+    # dto["out_fee_huifuid"] = ""
+    # 交易手续费外扣时的账户类型
+    # dto["out_fee_acct_type"] = ""
+    # 云闪付免密支付开通标识
+    # dto["cloud_quick_pass_secret_free_flag"] = ""
+
+    return json.dumps(dto)
+
+def get6c29693cEa064401A453E8cef30dfd41():
+    dto = dict()
+    # 分账规则来源
+    # dto["rule_origin"] = "test"
+    # 分账开关
+    # dto["div_flag"] = "test"
+    # 最大分账比例%
+    # dto["apply_ratio"] = "test"
+    # 生效类型
+    # dto["start_type"] = "test"
+    # 分账模式
+    # dto["scene"] = "test"
+    # 分账明细
+    # dto["acct_split_bunch_list"] = getDf99c30aA3a3492c92c01f9368e079d4()
+    # 交易手续费外扣开关
+    # dto["out_fee_flag"] = ""
+    # 交易手续费外扣时的账户类型
+    # dto["out_fee_acct_type"] = ""
+    # 交易手续费外扣汇付ID
+    # dto["out_fee_huifuid"] = ""
+    # 手续费%
+    # dto["split_fee_rate"] = ""
+    # 固定手续费
+    # dto["per_amt"] = ""
+    # 业务情况说明
+    # dto["split_ext_info"] = getEc946f8d59fe4581A4ec67b45184dfd5()
+
+    return json.dumps(dto)
+
+def getEc946f8d59fe4581A4ec67b45184dfd5():
+    dto = dict()
+    # *业务模式说明*
+    # dto["busi_instruction"] = "test"
+    # *资金流向说明*
+    # dto["capital_instruction"] = "test"
+    # *功能开通用途说明*
+    # dto["function_instruction"] = "test"
+
+    return dto;
+
+def getDf99c30aA3a3492c92c01f9368e079d4():
+    dto = dict()
+    # 分账比例
+    # dto["fee_rate"] = "test"
+    # 汇付Id
+    # dto["huifu_id"] = "test"
+
+    return dto;
+
+def get246879a981b14bcc9c5fC9604fc889a7():
+    dto = dict()
+    # 申请类型
+    # dto["apply_type"] = "test"
+    # 商户支付宝账号
+    # dto["account"] = "test"
+    # 服务费率仅支持渠道商。平台商户调用不支持该字段服务费率（%），0.38~3之间，精确到0.01。&lt;font color&#x3D;&quot;green&quot;&gt;示例值：0.06&lt;/font&gt;
+    # dto["fee_rate"] = "test"
+    # 文件列表
+    # dto["file_list"] = get840d56705ac24cd3B559C2b0faa8af64()
+    # 联系人姓名
+    # dto["contact_name"] = ""
+    # 联系人手机号
+    # dto["contact_mobile_no"] = ""
+    # 联系人电子邮箱
+    # dto["contact_email"] = ""
+    # 订单授权凭证
+    # dto["order_ticket"] = ""
+    # 营业执照编号
+    # dto["license_code"] = ""
+    # 营业执照有效期类型
+    # dto["license_validity_type"] = ""
+    # 营业执照有效期开始日期
+    # dto["license_begin_date"] = ""
+    # 营业执照有效期截止日期
+    # dto["license_end_date"] = ""
+
+    return json.dumps(dto)
+
+def get840d56705ac24cd3B559C2b0faa8af64():
+    dto = dict()
+    # 文件类型
+    # dto["file_type"] = "test"
+    # 文件jfileId
+    # dto["file_id"] = "test"
+
+    dtoList = [dto]
+    return dtoList
+
+def get89638f863ea44b45B15c143a6544ec20():
+    dto = dict()
+    # 微信子商户号
+    # dto["sub_mch_id"] = "test"
+    # 配置集合
+    # dto["wx_zl_pay_conf_list"] = get2ee2cc847ec54c2d8386Affc96d3d5d0()
+
+    return json.dumps(dto)
+
+def get2ee2cc847ec54c2d8386Affc96d3d5d0():
+    dto = dict()
+    # 申请服务
+    # dto["service_code"] = "test"
+    # 功能服务appid
+    # dto["sub_app_id"] = "test"
+    # 功能开关
+    # dto["switch_state"] = "test"
+    # 功能费率(%)
+    # dto["fee_rate"] = "test"
+    # 操作类型ADD-新增， UPDATE-修改， 默认新增；&lt;font color&#x3D;&quot;green&quot;&gt;示例值：ADD&lt;/font&gt;
+    # dto["operate_type"] = "test"
+    # 联系人信息jsonObject字符串,新增时必填
+    # dto["contact_info"] = get7c395626351b4676952962d3ca98c5d1()
+    # 特殊主体登记证书jsonObject字符串，商户营业执照类型为政府机关/事业单位/其他组织时，传入相应信息。新增时需填入
+    # dto["certificate_info"] = getDe05d5a58a1c49d8B6086d5b8d32409a()
+    # 最终受益人信息jsonObject字符串，商户类型为企业时，微信侧必填。（如果基本信息里有的话，可以不传取 huifu_id 对应的信息）。新增时填入
+    # dto["ubo_info"] = getF4108ed0353144f5A6441c0b64db8898()
+    # 经营场景jsonObject字符串，新增时填入
+    # dto["sales_info"] = get884e4f2d6a174e0b83c1Db970521d83c()
+    # 银行账户信息jsonObject字符串，该字段不填时，取商户在汇付系统录入的结算账号信息。新增或修改时填入，修改时必填
+    # dto["wx_card_info"] = getE782ba4b59f64f3b9edfDc224c497fc5()
+    # 补充说明信息
+    # dto["business_addition_msg"] = ""
+    # 补充说明文件列表
+    # dto["addition_file_list"] = get9d1dc0c2C7124167A300752771e89a32()
+
+    dtoList = [dto]
+    return dtoList
+
+def get9d1dc0c2C7124167A300752771e89a32():
+    dto = dict()
+    # 文件类型
+    # dto["file_type"] = "test"
+    # 文件jfileId
+    # dto["file_id"] = "test"
+
+    dtoList = [dto]
+    return dtoList
+
+def getE782ba4b59f64f3b9edfDc224c497fc5():
+    dto = dict()
+    # 账户类型
+    # dto["card_type"] = "test"
+    # 开户名称
+    # dto["card_name"] = "test"
+    # 开户银行
+    # dto["bank_code"] = "test"
+    # 开户银行省编码
+    # dto["prov_id"] = "test"
+    # 开户银行市编码
+    # dto["area_id"] = "test"
+    # 开户银行联行号开户银行联行号与开户银行全称（含支行)二选一；&lt;font color&#x3D;&quot;green&quot;&gt;示例值：102290026507&lt;/font&gt;
+    # dto["branch_code"] = "test"
+    # 开户银行全称（含支行)开户银行联行号与开户银行全称（含支行)二选一；&lt;font color&#x3D;&quot;green&quot;&gt;示例值：中国工商银行股份有限公司上海市中山北路支行&lt;/font&gt;
+    # dto["branch_name"] = "test"
+    # 银行账号
+    # dto["card_no"] = "test"
+
+    return dto;
+
+def get884e4f2d6a174e0b83c1Db970521d83c():
+    dto = dict()
+    # 经营场景类型
+    # dto["sales_scenes_type"] = "test"
+    # 功能费率仅支持渠道商传入该字段。&lt;font color&#x3D;&quot;green&quot;&gt;示例值：0.06&lt;/font&gt;平台商户为子商户开通微信直连支付时，不支持该字段，取平台商户费率上送微信。
+    # dto["fee_rate"] = "test"
+    # 线下场所对应的商家公众号APPID开通线下门店场景时，填入。都填入时，取公众号的上送微信。&lt;font color&#x3D;&quot;green&quot;&gt;示例值：wx51aa91a575359ff5&lt;/font&gt;
+    # dto["biz_sub_jsapi_app_id"] = "test"
+    # 线下场所对应的商家小程序APPID开通线下门店场景时，填入。都填入时，取公众号的上送微信。&lt;font color&#x3D;&quot;green&quot;&gt;示例值：wxea9c30a90fs8d3fe&lt;/font&gt;
+    # dto["biz_sub_mini_app_id"] = "test"
+    # 服务商公众号 ID开通公众号场景时，直连服务商和商户的公众号 APP ID，二选一填入。&lt;font color&#x3D;&quot;green&quot;&gt;示例值：wx51aa91a575359ff5&lt;/font&gt;
+    # dto["jsapi_app_id"] = "test"
+    # 商家公众号APPID开通公众号场景时，直连服务商和商户的公众号 APP ID，二选一填入。&lt;font color&#x3D;&quot;green&quot;&gt;示例值：wxea9c30a90fs8d3fe&lt;/font&gt;
+    # dto["jsapi_sub_app_id"] = "test"
+    # 服务商小程序APPID开通小程序场景时，直连服务商和商户的小程序 APP ID，二选一填入。&lt;font color&#x3D;&quot;green&quot;&gt;示例值：wx51aa91a575359ff5&lt;/font&gt;
+    # dto["mini_app_id"] = "test"
+    # 商家小程序APPID开通小程序场景时，直连服务商和商户的小程序 APP ID，二选一填入。&lt;font color&#x3D;&quot;green&quot;&gt;示例值：wx51aa91a575359ff5&lt;/font&gt;
+    # dto["mini_sub_app_id"] = "test"
+    # 服务商应用APPID开通 APP 场景时，直连服务商和商户的 APP ID，二选一填入。&lt;font color&#x3D;&quot;green&quot;&gt;示例值：wx51aa91a575359ff5&lt;/font&gt;
+    # dto["app_app_id"] = "test"
+    # 商家应用APPID开通 APP 场景时，直连服务商和商户的 APP ID，二选一填入。&lt;font color&#x3D;&quot;green&quot;&gt;示例值：wx51aa91a575359ff5&lt;/font&gt;
+    # dto["app_sub_app_id"] = "test"
+    # 互联网网站域名开通互联网场景时填入；&lt;font color&#x3D;&quot;green&quot;&gt;示例值：huifu.com&lt;/font&gt;
+    # dto["web_domain"] = "test"
+    # 互联网网站对应的商家APPID开通互联网场景时填入；&lt;font color&#x3D;&quot;green&quot;&gt;示例值：wx51aa91a575359ff5&lt;/font&gt;
+    # dto["web_app_id"] = "test"
+    # 商家企业微信CorpID开通企业微信场景时填入；&lt;font color&#x3D;&quot;green&quot;&gt;示例值：xxxxx&lt;/font&gt;
+    # dto["sub_corp_id"] = "test"
+    # 文件列表
+    # dto["sales_scenes_file_list"] = getB1fca7b651cb4fa981bc2f6786389cf7()
+    # 文件列表
+    # dto["fee_rate_file_list"] = ""
+    # 门店名称
+    # dto["biz_store_name"] = ""
+    # 门店省市编码
+    # dto["biz_address_code"] = ""
+    # 门店地址
+    # dto["biz_store_address"] = ""
+
+    return dto;
+
+def getB1fca7b651cb4fa981bc2f6786389cf7():
+    dto = dict()
+    # 文件类型
+    # dto["file_type"] = "test"
+    # 文件jfileId
+    # dto["file_id"] = "test"
+
+    return dto;
+
+def getF4108ed0353144f5A6441c0b64db8898():
+    dto = dict()
+    # 经营者/法人是否为受益人
+    # dto["ubo_type"] = "test"
+    # 受益人信息列表jsonArray格式,当ubo_type为Y时可不填
+    # dto["ubo_info_list"] = getA960b3745fc74e21B7f63e4fac83ed8f()
+
+    return dto;
+
+def getA960b3745fc74e21B7f63e4fac83ed8f():
+    dto = dict()
+    # 证件类型
+    # dto["ubo_cert_type"] = "test"
+    # 证件号码
+    # dto["ubo_cert_no"] = "test"
+    # 姓名
+    # dto["ubo_name"] = "test"
+    # 受益人证件居住地址
+    # dto["ubo_cert_doc_address"] = "test"
+    # 证件有效类型
+    # dto["ubo_cert_validity_type"] = "test"
+    # 证件有效期开始日期
+    # dto["ubo_cert_begin_date"] = "test"
+    # 文件列表
+    # dto["ubo_file_list"] = getAd3d2ada70b54341A9a903ee8819d5b1()
+    # 证件有效期截止日期
+    # dto["ubo_cert_end_date"] = ""
+
+    dtoList = [dto]
+    return dtoList
+
+def getAd3d2ada70b54341A9a903ee8819d5b1():
+    dto = dict()
+    # 文件类型
+    # dto["file_type"] = "test"
+    # 文件jfileId
+    # dto["file_id"] = "test"
+
+    dtoList = [dto]
+    return dtoList
+
+def getDe05d5a58a1c49d8B6086d5b8d32409a():
+    dto = dict()
+    # 登记证书类型
+    # dto["cert_type"] = "test"
+    # 证书号
+    # dto["cert_no"] = "test"
+    # 证书商户名称
+    # dto["cert_mer_name"] = "test"
+    # 注册地址
+    # dto["reg_detail"] = "test"
+    # 法人姓名
+    # dto["legal_name"] = "test"
+    # 证书有效期类型
+    # dto["cert_validity_type"] = "test"
+    # 证书有效期开始日期
+    # dto["cert_begin_date"] = "test"
+    # 文件列表
+    # dto["cert_file_list"] = get2accdbfaBe9d47ceB6eaFddd7188acfa()
+    # 证书有效期截止日期
+    # dto["cert_end_date"] = ""
+
+    return dto;
+
+def get2accdbfaBe9d47ceB6eaFddd7188acfa():
+    dto = dict()
+    # 文件类型
+    # dto["file_type"] = "test"
+    # 文件jfileId
+    # dto["file_id"] = "test"
+
+    dtoList = [dto]
+    return dtoList
+
+def get7c395626351b4676952962d3ca98c5d1():
+    dto = dict()
+    # 联系人类型
+    # dto["contact_type"] = "test"
+    # 联系人姓名联系人类型为经办人时必填；&lt;font color&#x3D;&quot;green&quot;&gt;示例值：张三&lt;/font&gt;
+    # dto["contact_name"] = "test"
+    # 联系人证件类型联系人类型为经办人时必填；00：身份证01:护照11：港澳台同胞通行证12：外国人居留证13：港澳居民证14：台湾居民证&lt;br/&gt;&lt;font color&#x3D;&quot;green&quot;&gt;示例值：00&lt;/font&gt;；
+    # dto["cert_type"] = "test"
+    # 联系人证件号码联系人类型为经办人时必填；&lt;font color&#x3D;&quot;green&quot;&gt;示例值：32090297512026402&lt;/font&gt;
+    # dto["contact_cert_no"] = "test"
+    # 联系人手机号
+    # dto["contact_mobile_no"] = "test"
+    # 联系人电子邮箱
+    # dto["contact_email"] = "test"
+    # 联系人资料联系人类型为经办人时必填F28-联系人身份证国徽面   F29-联系人身份证人像面F227-微信业务办理授权函&lt;br/&gt;&lt;font color&#x3D;&quot;green&quot;&gt;示例值：&lt;/font&gt;
+    # dto["contact_file_list"] = getD8020112F89e4920A2542009264ada45()
+    # 证件有效期类型
+    # dto["contact_cert_validity_type"] = "test"
+    # 证件有效期开始日期
+    # dto["contact_cert_begin_date"] = "test"
+    # 证件有效期截止日期
+    # dto["contact_cert_end_date"] = ""
+
+    return dto;
+
+def getD8020112F89e4920A2542009264ada45():
+    dto = dict()
+    # 文件类型
+    # dto["file_type"] = "test"
+    # 文件jfileId
+    # dto["file_id"] = "test"
+
+    return dto;
+
+def getBeacf39b807242e994189d4bf55f4023():
+    dto = dict()
+    # 签约人类型
+    # dto["type"] = "test"
+    # 姓名签约人类型&#x3D;其他，必填；&lt;font color&#x3D;&quot;green&quot;&gt;示例值：张三&lt;/font&gt;
+    # dto["name"] = "test"
+    # 手机号签约人类型&#x3D;法人/其他 ，必填；注意：**签约人会做姓名+身份证+手机号验证，请正确填写**；&lt;font color&#x3D;&quot;green&quot;&gt;示例值：13917463536&lt;/font&gt;
+    # dto["mobile_no"] = "test"
+    # 身份证签约人类型&#x3D;联系人/其他，必填 ；注意：**签约人会做姓名+身份证+手机号验证，请正确填写**；&lt;font color&#x3D;&quot;green&quot;&gt;示例值：320946195712025082&lt;/font&gt;
+    # dto["cert_no"] = "test"
+    # 邮箱
+    # dto["email"] = ""
+
+    return json.dumps(dto)
+
+def getC45df50aA06741fb977435b7a28c2a89():
+    dto = dict()
+    # *文件id*
+    # dto["file_id"] = "test"
+    # *文件类型*
+    # dto["file_type"] = ""
+
+    dtoList = [dto]
+    return json.dumps(dtoList)
+
+def get6d4be43fAd234932B174Bfa4caa3626b():
+    dto = dict()
+    # *运营媒介类型*
+    # dto["media_type"] = "test"
+    # *媒介名称*PC网站域名／APP名称／小程序名称／公众号名称；&lt;font color&#x3D;&quot;green&quot;&gt;示例值：汇付服务&lt;/font&gt;&lt;br/&gt;运营媒介类型为 ：S1/S2/S3/S4时，必填；
+    # dto["media_name"] = "test"
+    # ICP备案/许可证号运营媒介类型为 ：S1时必填；&lt;font color&#x3D;&quot;green&quot;&gt;示例值：沪ICP备06046402号-28&lt;/font&gt;
+    # dto["mer_icp"] = "test"
+    # *其他有效信息*其他有效信息或链接地址/APP下载地址；类型为S5或S2必填&lt;br/&gt;&lt;font color&#x3D;&quot;green&quot;&gt;示例值：http://download.huifu.com&lt;/font&gt;
+    # dto["other_info"] = "test"
+    # *媒介主体与商户主体是否一致*Y/N；&lt;font color&#x3D;&quot;green&quot;&gt;示例值：Y&lt;/font&gt;&lt;br/&gt;运营媒介为S1、S2、S3、S4且企业商户开通快捷或网银，或大额转账，或余额支付或分账业务（20%（不含）-100%），或为个人商户开通分账业务（10%（不含）-100%），必填&lt;br/&gt;若不一致，则需提供ICP备案/APP/微信公众号/小程序主体与商户的使用授权或开发证明材料；
+    # dto["media_mer_common_flag"] = "test"
+    # *授权或开发证明材料*运营媒介为S1、S2、S3、S4且媒介主体与商户主体不一致时，且企业商户开通快捷或网银，或大额转账，或余额支付或分账业务（20%（不含）-100%），或为个人商户开通分账业务（10%（不含）-100%），必填&lt;br/&gt;&lt;font color&#x3D;&quot;green&quot;&gt;示例值：57cc7f00-600a-33ab-b614-6221bbf2e530&lt;/font&gt;
+    # dto["authorize_materials"] = "test"
+    # 微信APP补充材料运营媒介为S2且开通微信下app支付时选填，具体见[图片上传接口](https://paas.huifu.com/open/doc/api/#/shgl/shjj/api_shjj_shtpsc)
+    # dto["other_material"] = "test"
+    # appId运营媒介为S2且开通微信下app支付时必填
+    # dto["app_id"] = "test"
+    # appId认证主体名称运营媒介为S2且开通微信下app支付时必填
+    # dto["app_name"] = "test"
+    # 补充说明运营媒介为S2且开通微信下app支付时选填
+    # dto["supplement"] = "test"
+    # *测试账号*
+    # dto["test_account"] = ""
+    # *测试密码*
+    # dto["test_secret"] = ""
+    # *运营媒介-首页*
+    # dto["media_front_page"] = ""
+    # *运营媒介-服务/商品明细页面*
+    # dto["media_service_page"] = ""
+    # *运营媒介-下单场景页面*
+    # dto["media_order_page"] = ""
+    # *运营媒介-支付页面*
+    # dto["media_pay_page"] = ""
+
+    dtoList = [dto]
+    return json.dumps(dtoList)
+
+def get99fff13d6dc248d6A2b782061b36b5d1():
+    dto = dict()
+    # 归集留存金(元)
+    # dto["out_resv_amt"] = "test"
+    # 转入商户号
+    # dto["in_huifu_id"] = "test"
+    # 转入账户
+    # dto["in_acct_id"] = "test"
+    # 生效日期
+    # dto["valid_date"] = "test"
+    # 功能开关
+    # dto["switch_state"] = ""
+    # 转出账户
+    # dto["out_acct_id"] = ""
+
+    dtoList = [dto]
+    return json.dumps(dtoList)
+
+def get0f114a876c46482eAc15Bc31e20a0893():
+    dto = dict()
+    # 功能开关
+    # dto["switch_state"] = "test"
+    # 自动入账开关
+    # dto["out_order_auto_acct_flag"] = "test"
+    # 全渠道资金管理补充材料涉及文件类型：F504-全渠道资金管理补充材料；&lt;br/&gt;&lt;font color&#x3D;&quot;green&quot;&gt;示例值：57cc7f00-600a-33ab-b614-6221bbf2e529&lt;/font&gt;
+    # dto["other_payment_institutions_pic"] = "test"
+    # 支付手续费(%)
+    # dto["fee_rate"] = ""
+    # 手续费最小值(元)
+    # dto["fee_min_amt"] = ""
+    # 交易手续费外扣时的账户类型
+    # dto["out_fee_acct_type"] = ""
+    # 交易手续费外扣标记
+    # dto["out_fee_flag"] = ""
+    # 交易手续费外扣汇付ID
+    # dto["out_fee_huifuid"] = ""
+    # 全域资金开户使用的银行卡信息
+    # dto["out_order_acct_card"] = get80eb25b711454690B018Fa139a472d11()
+    # 全域资金开户手续费
+    # dto["out_order_acct_open_fees"] = getBe3182f189ca4cef95353b813f9613a2()
+    # 全域支付业务模式
+    # dto["business_model"] = ""
+
+    return json.dumps(dto)
+
+def getBe3182f189ca4cef95353b813f9613a2():
+    dto = dict()
+    # 开户手续费(元)
+    # dto["fee_fix_amt"] = "test"
+    # 开户手续费外扣时的账户类型01-基本户，05-充值户，09-营销户，不填默认01；&lt;font color&#x3D;&quot;green&quot;&gt;示例值：01&lt;/font&gt;&lt;br/&gt;注：fee_fix_amt：开户手续费大于0时必填
+    # dto["out_fee_acct_type"] = "test"
+    # 开户手续费外扣汇付ID开通手续费外扣业务时必填；&lt;font color&#x3D;&quot;green&quot;&gt;示例值：6666000109812123&lt;/font&gt;&lt;br/&gt;注：fee_fix_amt：开户手续费大于0时必填
+    # dto["out_fee_huifuid"] = "test"
+
+    return dto;
+
+def get80eb25b711454690B018Fa139a472d11():
+    dto = dict()
+    # 结算账户名
+    # dto["card_name"] = "test"
+    # 银行卡号
+    # dto["card_no"] = "test"
+    # 卡类型
+    # dto["card_type"] = "test"
+    # 持卡人证件类型00:身份证；&lt;font color&#x3D;&quot;green&quot;&gt;示例值：00&lt;/font&gt;；card_type为1时选填。
+    # dto["cert_type"] = "test"
+    # 持卡人证件有效期（起始）card_type为1时选填；格式：yyyyMMdd，&lt;font color&#x3D;&quot;green&quot;&gt;示例值：20210830&lt;/font&gt;；&lt;br/&gt;若填写cert_no，cert_validity_type，cert_type需同时填写。
+    # dto["cert_begin_date"] = "test"
+    # 持卡人证件有效期（截止）cert_validity_type变更为0时必填，格式：yyyyMMdd；&lt;font color&#x3D;&quot;green&quot;&gt;示例值：20210830&lt;/font&gt;
+    # dto["cert_end_date"] = "test"
+    # 持卡人证件号码card_type为1时选填；&lt;font color&#x3D;&quot;green&quot;&gt;示例值：310112200001018888&lt;/font&gt;；
+    # dto["cert_no"] = "test"
+    # 银行卡绑定手机号
+    # dto["mp"] = "test"
+    # 银行所在省
+    # dto["prov_id"] = ""
+    # 银行所在市
+    # dto["area_id"] = ""
+    # 银行编码
+    # dto["bank_code"] = ""
+    # 支行联行号
+    # dto["branch_code"] = ""
+    # 支行名称
+    # dto["branch_name"] = ""
+    # 持卡人证件有效期类型
+    # dto["cert_validity_type"] = ""
+    # 开户许可证核准号
+    # dto["open_licence_no"] = ""
+
+    return dto;
+
+def get1718b10aA5a548a1A5f10b25c8288304():
+    dto = dict()
+    # 业务类型
+    # dto["pay_type"] = ""
+
+    dtoList = [dto]
+    return json.dumps(dtoList)
+
+def get1e18cb745b42477fAefd3d8fa2bb7c1f():
+    dto = dict()
+    # 功能开关
+    dto["switch_state"] = "0"
+    # 是否交易手续费外扣
+    # dto["out_fee_flag"] = "test"
+    # 交易手续费外扣汇付ID
+    # dto["out_fee_huifuid"] = "test"
+    # 支付手续费(%)
+    dto["fee_rate"] = "10"
+    # 支付固定手续费(元)
+    dto["fee_fix_amt"] = "5"
+    # 交易手续费外扣时的账户类型
+    # dto["out_fee_acct_type"] = ""
+
+    return json.dumps(dto)
+
+def get147a3ec25a5147d7813aE35431a613a4():
+    dto = dict()
+    # *业务模式*
+    # dto["balance_model"] = "test"
+    # *业务情况说明*
+    # dto["description_info"] = get3723610aDe3f4dbf87335990b873f171()
+    # 支付手续费(%)
+    dto["fee_rate"] = "2"
+    # 支付固定手续费(元)
+    dto["fee_fix_amt"] = "1"
+    # 功能开关
+    dto["switch_state"] = "1"
+    # 交易手续费外扣时的账户类型
+    # dto["out_fee_acct_type"] = ""
+    # 交易手续费外扣汇付ID
+    # dto["out_fee_huifuid"] = ""
+    # 是否交易手续费外扣
+    # dto["out_fee_flag"] = ""
+    # 扣费模式
+    # dto["charge_mode"] = ""
+    # 余额支付模式
+    # dto["pay_mode"] = ""
+
+    return json.dumps(dto)
+
+def get3723610aDe3f4dbf87335990b873f171():
+    dto = dict()
+    # *业务模式说明*请详细说明商户的业务模式，包括不限于（业务参与方、各方的权利及义务关系等）。最大500个汉字，必填&lt;br/&gt;&lt;font color&#x3D;&quot;green&quot;&gt;示例值：商户向企业采购产品，并将其展示在其电商平台上，用户注册后购买其产品，产品主要有家电、服饰、鞋帽等，用户购买产品的资金作为商户所得，商户根据订单情况进行物流配送。&lt;/font&gt;
+    # dto["busi_instruction"] = "test"
+    # *资金流向说明*请详细说明商户的资金流向，包括但不限于（交易所涉及的各方账户、资金流入流出过程等）。最大500个汉字，必填&lt;br/&gt;&lt;font color&#x3D;&quot;green&quot;&gt;示例值：用户选购产品后根据订单支付给商户，商户根据结算周期，结算到对公账户。&lt;/font&gt;
+    # dto["capital_instruction"] = "test"
+    # *功能开通用途说明*请详述所申请功能的原因、场景、涉及对象类型。最大500个汉字，必填&lt;br/&gt;&lt;font color&#x3D;&quot;green&quot;&gt;示例值：企业工资代发&lt;/font&gt;
+    # dto["function_instruction"] = "test"
+
+    return dto;
+
+def get2df4b86dDeb8464b9102Cffedb52db49():
+    dto = dict()
+    # 借记卡手续费（%）
+    dto["debit_fee_rate"] = "3"
+    # 贷记卡手续费（%）
+    dto["credit_fee_rate"] = "6"
+    # 银行业务手续费类型
+    dto["charge_cate_code"] = "02"
+    # 借记卡封顶值
+    dto["debit_fee_limit"] = "5"
+    # 是否开通小额双免
+    dto["is_open_small_flag"] = "0"
+    # 小额双免单笔限额(元)
+    dto["small_free_amt"] = "500"
+    # 小额双免手续费（%）
+    dto["small_fee_amt"] = "1"
+    # 功能开关
+    # dto["switch_state"] = ""
+    # 银联手机闪付借记卡手续费1000以上（%）
+    dto["cloud_debit_fee_rate_up"] = "7"
+    # 银联手机闪付借记卡封顶1000以上(元)
+    dto["cloud_debit_fee_limit_up"] = "8.922"
+    # 银联手机闪付贷记卡手续费1000以上（%）
+    dto["cloud_credit_fee_rate_up"] = "4.86"
+    # 银联手机闪付借记卡手续费1000以下（%）
+    dto["cloud_debit_fee_rate_down"] = "0"
+    # 银联手机闪付借记卡封顶1000以下(元)
+    dto["cloud_debit_fee_limit_down"] = "10"
+    # 银联手机闪付贷记卡手续费1000以下（%）
+    dto["cloud_credit_fee_rate_down"] = "2"
+
+    return json.dumps(dto)
+
+def getA8abf8b363a14ad984347d31d643c4c7():
+    dto = dict()
+    # 借记卡手续费（%）
+    # dto["debit_fee_rate"] = "test"
+    # 贷记卡手续费1000以上（%）
+    dto["credit_fee_rate_up"] = "6.566"
+    # 贷记卡手续费1000及以下（%）
+    dto["credit_fee_rate_down"] = "1"
+    # 银行业务手续费类型
+    dto["charge_cate_code"] = ""
+    # 功能开关
+    # dto["switch_state"] = ""
+
+    dtoList = [dto]
+    return json.dumps(dtoList)
+
+def get8665536aBe23473981ea2b7ff369a486():
+    dto = dict()
+    # 开关状态
+    # dto["switch_state"] = "test"
+    # 手续费（%）
+    dto["fee_rate"] = "2.15"
+    # 支付场景
+    dto["pay_scene"] = "10"
+    # 最低收取手续费（元）
+    # dto["fee_min_amt"] = ""
+    # 费率规则ID
+    dto["fee_rule_id"] = "765"
+    # 子渠道号
+    dto["pay_channel_id"] = "JP00001"
+    # 申请服务
+    dto["service_codes"] = ""
+    # 是否需要实名认证
+    # dto["is_check_real_name"] = ""
+    # 实名认证信息
+    # dto["wx_real_name_info"] = get3fae8958569843d39d232e48fd2bbcb4()
+
+    dtoList = [dto]
+    return json.dumps(dtoList)
+
+def get3fae8958569843d39d232e48fd2bbcb4():
+    dto = dict()
+    # 联系人姓名联系人类型contact_type&#x3D;SUPER时必填。示例值：张三
+    # dto["name"] = "test"
+    # 联系人手机号联系人类型contact_type&#x3D;SUPER时必填。示例值：13917364538
+    # dto["mobile"] = "test"
+    # 联系人证件类型联系人类型contact_type&#x3D;SUPER时必填。&lt;br/&gt;枚举值参见《自然人证件类型》说明，示例值：00&lt;br/&gt;个体户/企业/事业单位/社会组织：可选择任一证件类型，政府机关仅支持身份证类型。
+    # dto["contact_id_doc_type"] = "test"
+    # 联系人证件号码联系人类型contact_type&#x3D;SUPER时必填。示例值：320936198512035017
+    # dto["id_card_number"] = "test"
+    # 联系人证件有效期开始时间联系人类型contact_type&#x3D;SUPER时必填&lt;br/&gt;格式：yyyy-MM-dd；示例值：2019-06-06
+    # dto["contact_period_begin"] = "test"
+    # 联系人证件有效期结束时间联系人类型contact_type&#x3D;SUPER时必填&lt;br/&gt;格式：yyyy-MM-dd；示例值：2029-06-06&lt;br/&gt;结束时间大于开始时间;若证件有效期为长期，请填写：长期
+    # dto["contact_period_end"] = "test"
+    # 是否金融机构
+    # dto["finance_institution_flag"] = ""
+    # 金融机构类型
+    # dto["finance_type"] = ""
+    # 证书类型
+    # dto["cert_type"] = ""
+    # 小微经营类型
+    # dto["micro_biz_type"] = ""
+    # 特殊行业id
+    # dto["special_category_id"] = ""
+    # 联系人类型
+    # dto["contact_type"] = ""
+
+    return dto;
+
+def get83e5395c797e4a34Ae1a6e9fba9fdafa():
+    dto = dict()
+    # 手续费（%）
+    dto["fee_rate"] = "3.15"
+    # 支付场景
+    dto["pay_scene"] = "1"
+    # *功能开关*
+    # dto["switch_state"] = "test"
+    # 最低收取手续费（元）
+    # dto["fee_min_amt"] = ""
+    # 商户经营类目
+    dto["mcc"] = "2016062900190337"
+    # 子渠道号
+    dto["pay_channel_id"] = "10000001"
+    # 是否需要实名认证
+    # dto["is_check_real_name"] = ""
+    # 实名认证信息
+    # dto["al_real_name_info"] = get91da47024aa54ba0837a154b7163edca()
+
+    dtoList = [dto]
+    return json.dumps(dtoList)
+
+def get91da47024aa54ba0837a154b7163edca():
+    dto = dict()
+    # 是否金融机构
+    # dto["finance_institution_flag"] = ""
+    # 金融机构类型
+    # dto["finance_type"] = ""
+    # 证书类型
+    # dto["cert_type"] = ""
+    # 小微经营类型
+    # dto["micro_biz_type"] = ""
+    # 特殊行业id
+    # dto["special_category_id"] = ""
+    # 联系人信息对象
+    # dto["contact_person_info"] = get98a055b170e54cbe9dd83fdcbe0fdd92()
+    # 法人身份信息
+    # dto["legal_person_info"] = get0b247a83E9214d5c99b2E053e72b404f()
+
+    return json.dumps(dto)
+
+def get0b247a83E9214d5c99b2E053e72b404f():
+    dto = dict()
+    # 证件持有人类型
+    # dto["legal_type"] = ""
+    # 证件类型
+    # dto["card_type"] = ""
+    # 姓名
+    # dto["person_name"] = ""
+    # 证件号码
+    # dto["card_no"] = ""
+    # 证件生效时间
+    # dto["effect_time"] = ""
+    # 证件过期时间
+    # dto["expire_time"] = ""
+    # 证件正面照
+    # dto["card_front_img"] = ""
+    # 证件反面照
+    # dto["card_back_img"] = ""
+    # 授权函照片
+    # dto["auth_letter_img"] = ""
+    # 是否为受益人
+    # dto["is_benefit_person"] = ""
+
+    return json.dumps(dto)
+
+def get98a055b170e54cbe9dd83fdcbe0fdd92():
+    dto = dict()
+    # 联系人身份证号码
+    # dto["id_card_number"] = "test"
+    # 联系人姓名
+    # dto["name"] = ""
+    # 联系人手机号
+    # dto["mobile"] = ""
+
+    return json.dumps(dto)
+
+def get38673f03B464400897b94103c0d65470():
+    dto = dict()
+    # 业务类型
+    # dto["fee_type"] = "test"
+
+    dtoList = [dto]
+    return json.dumps(dtoList)
+
+def getB245208790a048658a0e678f174b8e10():
+    dto = dict()
+    # *协议类型*
+    dto["agreement_type"] = "0"
+    # *挂网协议地址*挂网协议必填；**必须按示例值填写**，&lt;font color&#x3D;&quot;green&quot;&gt;示例值：https://cloudpnrcdn.oss-cn-shanghai.aliyuncs.com/opps/api/prod/download_file/PaymentServiceAgreement.htm&lt;/font&gt;；
+    # dto["agreement_url"] = "test"
+    # 纸质协议开始日期
+    dto["agree_begin_date"] = "20200325"
+    # 纸质协议结束日期
+    dto["agree_end_date"] = "20400325"
+    # 电子协议签约短信发送标识
+    # dto["message_send_type"] = ""
+    # 电子协议异步通知地址
+    # dto["agreement_async_return_url"] = ""
+
+    return json.dumps(dto)
+
+
+def build_extend_infos():
+    """
+    非必填字段
+
+    :return: 非必填字段组成的字典
+    """
+    extend_infos = dict()
+    # 微信支付宝商户简称
+    extend_infos["short_name"] = ""
+    # *协议信息实体*
+    extend_infos["agreement_info"] = getB245208790a048658a0e678f174b8e10()
+    # 是否交易手续费外扣
+    extend_infos["out_fee_flag"] = "2"
+    # 交易手续费外扣汇付ID
+    extend_infos["out_fee_huifuid"] = ""
+    # 交易手续费外扣时的账户类型
+    extend_infos["out_fee_acct_type"] = ""
+    # 是否开通网银
+    extend_infos["online_flag"] = ""
+    # 是否开通快捷
+    extend_infos["quick_flag"] = ""
+    # 是否开通代扣
+    extend_infos["withhold_flag"] = ""
+    # 延迟入账开关
+    extend_infos["delay_flag"] = "Y"
+    # 开通支付宝预授权
+    extend_infos["alipay_pre_auth_flag"] = "Y"
+    # 开通微信预media_type授权
+    # extend_infos["wechatpay_pre_auth_flag"] = ""
+    # 商户业务类型
+    # extend_infos["mer_bus_type"] = ""
+    # 线上费率配置
+    # extend_infos["online_fee_conf_list"] = get38673f03B464400897b94103c0d65470()
+    # 支付宝配置对象
+    extend_infos["ali_conf_list"] = get83e5395c797e4a34Ae1a6e9fba9fdafa()
+    # 微信配置对象
+    extend_infos["wx_conf_list"] = get8665536aBe23473981ea2b7ff369a486()
+    # 银联二维码配置对象
+    extend_infos["union_conf_list"] = getA8abf8b363a14ad984347d31d643c4c7()
+    # 银行卡支付配置信息
+    extend_infos["bank_card_conf"] = get2df4b86dDeb8464b9102Cffedb52db49()
+    # *余额支付配置对象*
+    extend_infos["balance_pay_config"] = get147a3ec25a5147d7813aE35431a613a4()
+    # 补贴支付
+    extend_infos["combine_pay_config"] = get1e18cb745b42477fAefd3d8fa2bb7c1f()
+    # 线上手续费承担方配置
+    # extend_infos["online_pay_fee_conf_list"] = get1718b10aA5a548a1A5f10b25c8288304()
+    # 全域资金管理配置(华通银行)
+    # extend_infos["out_order_funds_config"] = get0f114a876c46482eAc15Bc31e20a0893()
+    # 汇总结算配置实体
+    # extend_infos["collection_settle_config_list"] = get99fff13d6dc248d6A2b782061b36b5d1()
+    # 异步消息接收地址
+    extend_infos["async_return_url"] = "http://www.baidu55.com"
+    # 业务开通结果异步消息接收地址
+    extend_infos["busi_async_return_url"] = ""
+    # 交易异步应答地址
+    extend_infos["recon_resp_addr"] = "http://192.168.85.157:30031/sspm/testVirgo"
+    # *运营媒介*
+    # extend_infos["online_media_info_list"] = get6d4be43fAd234932B174Bfa4caa3626b()
+    # *补充文件信息*
+    # extend_infos["extended_material_list"] = getC45df50aA06741fb977435b7a28c2a89()
+    # 商户开通强制延迟标记
+    # extend_infos["forced_delay_flag"] = ""
+    # 微信直连配置对象
+    # extend_infos["wx_zl_conf"] = get89638f863ea44b45B15c143a6544ec20()
+    # 支付宝直连配置对象
+    # extend_infos["ali_zl_conf"] = get246879a981b14bcc9c5fC9604fc889a7()
+    # 开户费用值(元)
+    # extend_infos["enter_fee"] = ""
+    # 开户费用类型
+    # extend_infos["enter_fee_flag"] = ""
+    # 是否开通在线退款
+    # extend_infos["online_refund"] = ""
+    # 是否支持平台退款
+    # extend_infos["platform_refund"] = ""
+    # 是否支持撤销
+    # extend_infos["support_revoke"] = ""
+    # 分账配置信息
+    # extend_infos["split_conf_info"] = get6c29693cEa064401A453E8cef30dfd41()
+    # 银联线上收银台
+    # extend_infos["uni_app_payment_config"] = get72c18d3559774c35A2519d2e949c3c6f()
+    # 资金归集开通标记
+    # extend_infos["fund_collection_flag"] = ""
+    # 代发配置
+    # extend_infos["surrogate_config_list"] = get3edfeeec24da475cBae54c95c414c3fe()
+    # 大额支付配置
+    # extend_infos["large_amt_pay_config"] = get390da42677b54b7485bf8cb7c65bcac3()
+    # 托管支付开关
+    # extend_infos["half_pay_host_flag"] = ""
+    # 代发复核配置
+    # extend_infos["agent_recheck_config"] = get9a918bdd38a543779d2eFe9b83f29c53()
+    # 商户开通网银充值开关
+    # extend_infos["online_recharge_flag"] = ""
+    # 是否开通垫资退款
+    # extend_infos["refund_mend_open_flag"] = ""
+    return extend_infos
+
+
+class TestV2MerchantBusiModifyRequestDemo(unittest.TestCase):
+
+    def setUp(self):
+        dg_sdk.DGClient.mer_config = dg_sdk.MerConfig(PRIVATE_KEY, PUBLIC_KEY, SYS_ID, PRODUCT_ID)
+
+        print("setup")
+
+
+    # 商户业务开通修改 - 示例
+    def test_request(self):
+
+        # 接口请求对象
+        request = dg_sdk.V2MerchantBusiModifyRequest()
+        request.req_seq_id = ""
+        request.req_date = ""
+        request.huifu_id = "6666000103668046"
+        request.online_busi_type = "test"
+        request.sign_user_info = getBeacf39b807242e994189d4bf55f4023()
+
+        # 所有非必填字段字典
+        extend_infos = build_extend_infos()
+
+        result = request.post(extend_infos)
+
+        print(result)
+        assert result["resp_code"] != ""

@@ -1,0 +1,260 @@
+import unittest
+import dg_sdk
+import json
+from demo.demo_config import *
+
+
+def getCe59880b04a34f6b996121a016d4cfbf():
+    dto = dict()
+    # 落地公司机构号当合作平台为汇薪云时，该参数必填。如果仅有一个可不填
+    # dto["minor_agent_id"] = "test"
+
+    return dto;
+
+def get9f6030ea2024485986a0499dc998ad0b():
+    dto = dict()
+    # 签约人类型
+    # dto["type"] = "test"
+    # 签约人手机号
+    # dto["mobile_no"] = "test"
+    # 签约人身份证
+    # dto["cert_no"] = ""
+    # 签约人姓名
+    # dto["name"] = ""
+
+    return dto;
+
+def get4c6c28a9725a4748967f96b7ce9f5816():
+    dto = dict()
+    # 电子回单开关
+    # dto["switch_state"] = "test"
+
+    return dto;
+
+def getF8bc44ea6b81439cA45b184f2d254bf1():
+    dto = dict()
+    # 税源地id当合作平台为乐接活，必填
+    # dto["tax_area_id"] = "test"
+
+    return json.dumps(dto)
+
+def get442b4863428048668d9941b66ef7b1b6():
+    dto = dict()
+    # 电子账户开关
+    # dto["switch_state"] = "test"
+    # 账户类型
+    # dto["acct_type"] = "test"
+    # 电子账户提现手续费承担方
+    # dto["cash_fee_party"] = "test"
+    # 场景
+    # dto["scene"] = "test"
+    # 角色类型(角色编号)
+    # dto["role_type"] = "test"
+    # 电子账户开通状态
+    # dto["bank_status"] = "test"
+    # 银行卡信息
+    # dto["elec_card_list"] = getD1d0f88c60ca487e8771E55ed45918a1()
+    # 银行信息
+    # dto["bank_message"] = ""
+    # 中信签约短信流水号
+    # dto["elec_acct_sign_seq_id"] = ""
+    # 签约成功标志
+    # dto["sign_success_flag"] = ""
+
+    return json.dumps(dto)
+
+def getD1d0f88c60ca487e8771E55ed45918a1():
+    dto = dict()
+    # 银行所在省
+    # dto["prov_id"] = "test"
+    # 银行所在市
+    # dto["area_id"] = "test"
+    # 银行编码
+    # dto["bank_code"] = "test"
+    # 支行联行号
+    # dto["branch_code"] = "test"
+    # 支行名称
+    # dto["branch_name"] = "test"
+    # 结算账户名
+    # dto["card_name"] = "test"
+    # 银行卡号
+    # dto["card_no"] = "test"
+    # 卡类型
+    # dto["card_type"] = "test"
+    # 银行绑定手机号
+    # dto["mp"] = ""
+    # 默认卡标识
+    # dto["default_cash_flag"] = ""
+    # 用户授权协议版本号
+    # dto["auth_version"] = ""
+    # 用户授权协议号
+    # dto["auth_no"] = ""
+
+    dtoList = [dto]
+    return dtoList
+
+def get6fd96675A2ee429e80ad61b52de43193():
+    dto = dict()
+    # 文件类型
+    dto["file_type"] = "F02"
+    # 文件jfileID
+    dto["file_id"] = "99e00421-dad7-3334-9538-4f2ad10612d5"
+    # 文件名称
+    dto["file_name"] = "企业营业执照1.jpg"
+
+    dtoList = [dto]
+    return json.dumps(dtoList)
+
+def getF0eb8937Cc60492f84111418cc199a7a():
+    dto = dict()
+    # 开通状态
+    dto["switch_state"] = "1"
+    # 提现手续费（固定/元）fix_amt与fee_rate至少填写一项， 需保留小数点后两位，不收费请填写0.00；&lt;font color&#x3D;&quot;green&quot;&gt;示例值：1.00&lt;/font&gt;注：当cash_type&#x3D;D1时为节假日取现手续费
+    dto["fix_amt"] = "3"
+    # 提现手续费率（%）fix_amt与fee_rate至少填写一项，需保留小数点后两位，取值范围[0.00,100.00]，不收费请填写0.00；&lt;font color&#x3D;&quot;green&quot;&gt;示例值：0.05&lt;/font&gt;注：1、如果fix_amt与fee_rate都填写了则手续费&#x3D;fix_amt+支付金额\*fee_rate2、当cash_type&#x3D;D1时为节假日取现手续费
+    dto["fee_rate"] = "0.05"
+    # D1工作日取现手续费固定金额单位元，需保留小数点后两位。不收费请填写0.00；&lt;font color&#x3D;&quot;green&quot;&gt;示例值：1.00&lt;/font&gt;cash_type&#x3D;D1时，不生效 ；cash_type取现类型为D1时，遇工作日按此费率结算，若未配置则默认按照节假日手续费计算
+    # dto["weekday_fix_amt"] = "test"
+    # D1工作日取现手续费率单位%，需保留小数点后两位。取值范围[0.00，100.00]，不收费请填写0.00；&lt;font color&#x3D;&quot;green&quot;&gt;示例值：0.05&lt;/font&gt;cash_type&#x3D;D1时，不生效 ；cash_type取现类型为D1时，遇工作日按此费率结算 ，若未配置则默认按照节假日手续费计算
+    # dto["weekday_fee_rate"] = "test"
+    # 业务类型
+    dto["cash_type"] = "D0"
+    # 是否交易手续费外扣
+    dto["out_fee_flag"] = "1"
+    # 手续费承担方
+    dto["out_fee_huifu_id"] = "6666000104633228"
+    # 交易手续费外扣的账户类型
+    dto["out_fee_acct_type"] = "05"
+    # 是否优先到账
+    # dto["is_priority_receipt"] = ""
+
+    dtoList = [dto]
+    return json.dumps(dtoList)
+
+def get4a815aca24cc416cA48d1b6efb5009d0():
+    dto = dict()
+    # 卡类型
+    dto["card_type"] = "0"
+    # 卡户名
+    dto["card_name"] = "陈立一"
+    # 卡号
+    dto["card_no"] = "6217001210064762000"
+    # 银行所在省
+    dto["prov_id"] = "310000"
+    # 银行所在市
+    dto["area_id"] = "310100"
+    # 支行联行号当card_type&#x3D;0时必填，[点击查看](https://paas.huifu.com/open/doc/api/#/csfl/api_csfl_yhzhbm)；&lt;font color&#x3D;&quot;green&quot;&gt;示例值：102290026507&lt;/font&gt;
+    dto["branch_code"] = "105305264815"
+    # 持卡人证件类型
+    dto["cert_type"] = "00"
+    # 持卡人证件号码
+    dto["cert_no"] = "110101197003077000"
+    # 持卡人证件有效期类型
+    dto["cert_validity_type"] = "0"
+    # 持卡人证件有效期起始日期
+    dto["cert_begin_date"] = "20210806"
+    # 持卡人证件有效期截止日期
+    dto["cert_end_date"] = "20410806"
+    # 银行卡绑定手机号
+    dto["mp"] = "15556622000"
+    # 默认结算卡标志
+    # dto["is_settle_default"] = ""
+
+    return json.dumps(dto)
+
+def get28f481dc3b6543be9d84Ec1e36a866de():
+    dto = dict()
+    # 开通状态
+    dto["settle_status"] = "1"
+    # 结算周期
+    dto["settle_cycle"] = "D1"
+    # 结算批次号settle_pattern为P0时必填；[参见结算批次说明](https://paas.huifu.com/open/doc/api/#/csfl/api_csfl_jspc)
+    dto["settle_batch_no"] = "0"
+    # 是否优先到账settle_pattern为P0时选填， Y：是 N：否（为空默认取值）；&lt;font color&#x3D;&quot;green&quot;&gt;示例值：Y&lt;/font&gt;
+    dto["is_priority_receipt"] = "Y"
+    # 自定义结算处理时间settle_pattern为P1/P2时必填，注意：00:00到00:30不能指定；格式：HHmmss；&lt;font color&#x3D;&quot;green&quot;&gt;示例值：103000&lt;/font&gt;
+    dto["settle_time"] = ""
+    # 节假日结算手续费率settle_cycle为D1时必填。单位%，需保留小数点后两位。取值范围[0.00，100.00]，不收费请填写0.00；settle_cycle&#x3D;T1时，不生效 ；settle_cycle为D1时，遇节假日按此费率结算 ；&lt;font color&#x3D;&quot;green&quot;&gt;示例值：0.05&lt;/font&gt;
+    dto["fixed_ratio"] = "0.1"
+    # 节假日结算手续费固定金额settle_cycle为D1时必填。单位元，需保留小数点后两位。不收费请填写0.00；settle_cycle结算周期为D1时，遇节假日按此费率结算 ；&lt;br/&gt; &lt;font color&#x3D;&quot;green&quot;&gt;示例值：1.00&lt;/font&gt;
+    # dto["constant_amt"] = "test"
+    # 起结金额
+    dto["min_amt"] = "0.1"
+    # 结算手续费外扣时的账户类型
+    dto["out_settle_acct_type"] = "05"
+    # 手续费外扣标记
+    dto["out_settle_flag"] = "1"
+    # 结算手续费外扣时的汇付ID
+    dto["out_settle_huifuid"] = "6666000104633228"
+    # 留存金额
+    dto["remained_amt"] = "0.1"
+    # 结算摘要
+    dto["settle_abstract"] = "吃吃"
+    # 结算方式
+    dto["settle_pattern"] = "P0"
+    # 工作日结算手续费率
+    # dto["workday_fixed_ratio"] = ""
+    # 工作日结算手续费固定金额
+    # dto["workday_constant_amt"] = ""
+
+    return json.dumps(dto)
+
+
+def build_extend_infos():
+    """
+    非必填字段
+
+    :return: 非必填字段组成的字典
+    """
+    extend_infos = dict()
+    # 结算信息配置
+    extend_infos["settle_config"] = get28f481dc3b6543be9d84Ec1e36a866de()
+    # 结算卡信息
+    extend_infos["card_info"] = get4a815aca24cc416cA48d1b6efb5009d0()
+    # 取现配置列表
+    extend_infos["cash_config"] = getF0eb8937Cc60492f84111418cc199a7a()
+    # 文件列表
+    extend_infos["file_list"] = get6fd96675A2ee429e80ad61b52de43193()
+    # 延迟入账开关
+    # extend_infos["delay_flag"] = ""
+    # 异步请求地址
+    extend_infos["async_return_url"] = "//http://service.example.com/to/path"
+    # 斗拱e账户功能配置
+    # extend_infos["elec_acct_config"] = get442b4863428048668d9941b66ef7b1b6()
+    # 灵活用工开关
+    # extend_infos["open_tax_flag"] = ""
+    # 合作平台
+    # extend_infos["lg_platform_type"] = ""
+    # 电子回单配置
+    # extend_infos["elec_receipt_config"] = get4c6c28a9725a4748967f96b7ce9f5816()
+    return extend_infos
+
+
+class TestV2UserBusiModifyRequestDemo(unittest.TestCase):
+
+    def setUp(self):
+        dg_sdk.DGClient.mer_config = dg_sdk.MerConfig(PRIVATE_KEY, PUBLIC_KEY, SYS_ID, PRODUCT_ID)
+
+        print("setup")
+
+
+    # 用户业务入驻修改 - 示例
+    def test_request(self):
+
+        # 接口请求对象
+        request = dg_sdk.V2UserBusiModifyRequest()
+        request.req_seq_id = ""
+        request.req_date = ""
+        request.upper_huifu_id = "6666000104633228"
+        request.huifu_id = "6666000104896342"
+        request.ljh_data = getF8bc44ea6b81439cA45b184f2d254bf1()
+        request.sign_user_info = get9f6030ea2024485986a0499dc998ad0b()
+        request.hxy_data = getCe59880b04a34f6b996121a016d4cfbf()
+
+        # 所有非必填字段字典
+        extend_infos = build_extend_infos()
+
+        result = request.post(extend_infos)
+
+        print(result)
+        assert result["resp_code"] != ""

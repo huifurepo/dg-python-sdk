@@ -1,0 +1,301 @@
+import unittest
+import dg_sdk
+import json
+from demo.demo_config import *
+
+
+def getCf019abd3ddb47af8663F1d9ff6ed9fd():
+    dto = dict()
+    # 文件id
+    # dto["file_id"] = "test"
+    # 文件类型
+    # dto["file_type"] = "test"
+
+    dtoList = [dto]
+    return json.dumps(dtoList)
+
+def get1dbd5834052849b2A92bC0604c0b90bc():
+    dto = dict()
+    # 是否交易手续费外扣
+    # dto["out_fee_flag"] = "test"
+    # 功能开关
+    # dto["switch_state"] = ""
+    # 手续费(%)
+    # dto["fee_rate"] = ""
+    # 手续费（固定/元）
+    # dto["fix_amt"] = ""
+    # 外扣规则
+    # dto["out_charge_mode"] = ""
+    # 手续费外扣时的账户ID
+    # dto["out_fee_acct_id"] = ""
+    # 手续费外扣汇付ID
+    # dto["out_fee_huifu_id"] = ""
+
+    return json.dumps(dto)
+
+def get6da18725516e4bea9d14Cbef83785cf4():
+    dto = dict()
+    # 业务类型
+    dto["pay_type"] = "ONLINE_ENT_TOP_UP"
+    # 手续费外扣时的账户类型
+    dto["out_fee_acct_type"] = "01"
+    # 手续费外扣汇付ID
+    dto["out_fee_huifuid"] = "6666000108329682"
+    # 是否交易手续费外扣
+    dto["out_fee_flag"] = "1"
+
+    dtoList = [dto]
+    return json.dumps(dtoList)
+
+def getA02146607bbc4b2bB8f32139b83eab02():
+    dto = dict()
+    # 银行编码
+    dto["bank_id"] = "01050000"
+    # 功能开关状态
+    dto["stat_flag"] = "1"
+    # 借贷标志
+    dto["dc_flag"] = "D"
+    # 银行名称
+    dto["bank_name"] = "中国建设银行股份有限公司上海市中支行"
+    # 银行中文简称
+    dto["bank_short_chn"] = "上海市中支行"
+    # 手续费（固定/元）
+    dto["fix_amt"] = "6"
+    # 费率（%）
+    dto["fee_rate"] = "6"
+
+    dtoList = [dto]
+    return json.dumps(dtoList)
+
+def get3fdd25d7620f43c995202a766540e688():
+    dto = dict()
+    # 大额支付配置列表
+    dto["large_amt_pay_config_info_list"] = getCce44a388f394bf383c01be9bec7b5fd()
+    # 交易手续费外扣huifuId交易手续费外扣时必填；&lt;font color&#x3D;&quot;green&quot;&gt;示例值：6666000108854952&lt;/font&gt;
+    dto["out_fee_huifu_id"] = "6666000108329682"
+    # 交易手续费外扣账户号交易手续费外扣时必填；&lt;font color&#x3D;&quot;green&quot;&gt;示例值：F00598602&lt;/font&gt;
+    dto["out_fee_acct_id"] = "C02714529"
+    # 交易手续费外扣标记
+    dto["out_fee_flag"] = "1"
+
+    return json.dumps(dto)
+
+def getCce44a388f394bf383c01be9bec7b5fd():
+    dto = dict()
+    # 费率（%）开通大额业务时必须填写一种收费方式；大于0,保留2位小数；&lt;font color&#x3D;&quot;green&quot;&gt;示例值：1.00&lt;/font&gt;
+    dto["fee_rate"] = "4"
+    # 交易手续费（固定/元）开通大额业务时必须填写一种收费方式；大于0,保留2位小数；&lt;font color&#x3D;&quot;green&quot;&gt;示例值：10.00&lt;/font&gt;
+    dto["fee_fix_amt"] = "5"
+    # 功能开关
+    dto["switch_state"] = "1"
+    # 大额调账标识申请类型
+    dto["biz_type"] = "01"
+    # 是否允许绑卡支付
+    dto["mer_same_card_recharge_flag"] = "Y"
+    # 是否允许用户入账
+    dto["allow_user_deposit_flag"] = "N"
+    # 备付金固定账号模式自动退款
+    dto["provisions_auto_refund_flag"] = "Y"
+
+    dtoList = [dto]
+    return dtoList
+
+def get75dc3d9aE50b4734Bf0447ba5a1a06f1():
+    dto = dict()
+    # 是否开通取现
+    dto["switch_state"] = ""
+    # 业务类型
+    dto["cash_type"] = "D1"
+    # 提现手续费（固定/元）开通提现业务时fix_amt与fee_rate至少填写一项；&lt;font color&#x3D;&quot;green&quot;&gt;示例值：1.00&lt;/font&gt;
+    dto["fix_amt"] = "2"
+    # D1工作日取现手续费固定金额单位元，需保留小数点后两位。不收费请填写0.00；&lt;font color&#x3D;&quot;green&quot;&gt;示例值：1.00&lt;/font&gt;cash_type&#x3D;T1时，不生效 ；cash_type取现类型为D1时，遇工作日按此费率结算，若未配置则默认按照节假日手续费计算
+    dto["weekday_fix_amt"] = "2"
+    # D1工作日取现手续费率单位%，需保留小数点后两位。取值范围[0.00，100.00]，不收费请填写0.00；&lt;font color&#x3D;&quot;green&quot;&gt;示例值：0.05&lt;/font&gt;cash_type&#x3D;T1时，不生效 ；cash_type取现类型为D1时，遇工作日按此费率结算 ，若未配置则默认按照节假日手续费计算
+    dto["weekday_fee_rate"] = "3"
+    # 取现手续费率（%）
+    dto["fee_rate"] = "10.00"
+    # 是否交易手续费外扣
+    dto["out_fee_flag"] = "1"
+    # 手续费承担方
+    dto["out_fee_huifu_id"] = "6666000108329682"
+    # 手续费外扣的账户类型
+    dto["out_fee_acct_type"] = "01"
+    # 是否优先到账
+    dto["is_priority_receipt"] = "Y"
+
+    dtoList = [dto]
+    return json.dumps(dtoList)
+
+def get855e86b012e24b289ab027766a4d642c():
+    dto = dict()
+    # 银行账户名
+    # dto["card_name"] = "test"
+    # 银行账号
+    # dto["card_no"] = "test"
+    # 银行所在省
+    # dto["prov_id"] = "test"
+    # 银行所在市
+    # dto["area_id"] = "test"
+    # 银行编码
+    # dto["bank_code"] = "test"
+    # 联行号
+    # dto["branch_code"] = "test"
+
+    return json.dumps(dto)
+
+def getBd06bcb2Ffa441618a4d4f34c1b1b814():
+    dto = dict()
+    # 签约人类型
+    dto["type"] = "CONTACT"
+    # 姓名
+    dto["name"] = "施忠晶"
+    # 手机号
+    dto["mobile_no"] = "13812345231"
+    # 身份证
+    dto["cert_no"] = "513701201104022297"
+
+    return json.dumps(dto)
+
+def get8fa45923559245789c08F98886e3abf4():
+    dto = dict()
+    # 营业执照信息
+    dto["license_info"] = get858a455aC14d4b81B0944d12e2149607()
+    # 经营信息
+    dto["company_info"] = get53a6945057214743Ac72F8075e09b9fe()
+    # 法人信息
+    dto["legal_info"] = get5a0f8effD0d142568c4d94e2da391586()
+    # 联系人信息
+    dto["contact_info"] = get809a6f55Cd3e4771Bb3d20d205c0aed4()
+
+    return json.dumps(dto)
+
+def get809a6f55Cd3e4771Bb3d20d205c0aed4():
+    dto = dict()
+    # 联系人姓名
+    dto["contact_name"] = "岑晓"
+    # 联系人手机号
+    dto["contact_mobile_no"] = "18777716992"
+    # 联系人电子邮箱
+    dto["contact_email"] = "lianxi@huifu.com"
+
+    return dto;
+
+def get5a0f8effD0d142568c4d94e2da391586():
+    dto = dict()
+    # 法人姓名
+    dto["legal_name"] = "岑晓"
+    # 法人证件类型
+    dto["legal_cert_type"] = "00"
+    # 法人证件号码
+    dto["legal_cert_no"] = "513701199108105217"
+    # 法人证件有效期类型
+    dto["legal_cert_validity_type"] = ""
+    # 法人证件有效期开始日期
+    dto["legal_cert_begin_date"] = ""
+    # 法人证件有效期截止日期
+    dto["legal_cert_end_date"] = ""
+    # 法人手机号
+    dto["legal_mobile_no"] = ""
+    # 法人证件地址
+    dto["legal_addr"] = ""
+    # 法人身份证国徽面
+    dto["legal_cert_back_pic"] = ""
+    # 法人身份证人像面
+    dto["legal_cert_front_pic"] = ""
+
+    return dto;
+
+def get53a6945057214743Ac72F8075e09b9fe():
+    dto = dict()
+    # 店铺门头照
+    dto["store_header_pic"] = "ececec87-e772-331a-b4fc-fae92732d992"
+    # 经营简称
+    dto["short_name"] = "简称888"
+
+    return dto;
+
+def get858a455aC14d4b81B0944d12e2149607():
+    dto = dict()
+    # 营业执照类型
+    dto["license_type"] = "CERTIFICATE_TYPE_0001"
+    # 营业执照编号
+    # dto["license_code"] = "test"
+    # 营业执照有效期开始日期
+    dto["license_begin_date"] = "20210101"
+    # 营业执照有效期截止日期
+    dto["license_end_date"] = "20410101"
+    # 营业执照有效期类型
+    dto["license_validity_type"] = "0"
+    # 注册省
+    dto["reg_prov_id"] = "340000"
+    # 注册市
+    dto["reg_area_id"] = "340100"
+    # 注册区
+    dto["reg_district_id"] = "340102"
+    # 注册详细地址
+    dto["reg_detail"] = "瑶海区1号"
+    # 证照图片
+    dto["license_pic"] = "67cce967-bd22-32b4-a250-58b82e78154a"
+
+    return dto;
+
+
+def build_extend_infos():
+    """
+    非必填字段
+
+    :return: 非必填字段组成的字典
+    """
+    extend_infos = dict()
+    # 卡信息配置实体
+    # extend_infos["card_info"] = get855e86b012e24b289ab027766a4d642c()
+    # 取现配置列表
+    extend_infos["cash_config"] = get75dc3d9aE50b4734Bf0447ba5a1a06f1()
+    # 大额支付配置
+    extend_infos["large_amt_pay_config"] = get3fdd25d7620f43c995202a766540e688()
+    # 是否开通网银充值
+    extend_infos["online_recharge_flag"] = "Y"
+    # 线上费率配置
+    extend_infos["online_fee_conf_list"] = getA02146607bbc4b2bB8f32139b83eab02()
+    # 线上手续费承担方配置
+    extend_infos["online_pay_fee_conf_list"] = get6da18725516e4bea9d14Cbef83785cf4()
+    # 灵工支付配置
+    # extend_infos["flexible_pay_config"] = get1dbd5834052849b2A92bC0604c0b90bc()
+    # 扩展资料包
+    # extend_infos["extended_material_list"] = getCf019abd3ddb47af8663F1d9ff6ed9fd()
+    # 电子协议异步通知地址
+    extend_infos["agreement_async_return_url"] = ""
+    # 异步请求地址
+    extend_infos["async_return_url"] = ""
+    # 业务开通结果异步消息接收地址
+    extend_infos["busi_async_return_url"] = ""
+    return extend_infos
+
+
+class TestV2FlexibleEntModifyRequestDemo(unittest.TestCase):
+
+    def setUp(self):
+        dg_sdk.DGClient.mer_config = dg_sdk.MerConfig(PRIVATE_KEY, PUBLIC_KEY, SYS_ID, PRODUCT_ID)
+
+        print("setup")
+
+
+    # 灵工企业商户业务修改 - 示例
+    def test_request(self):
+
+        # 接口请求对象
+        request = dg_sdk.V2FlexibleEntModifyRequest()
+        request.req_seq_id = ""
+        request.req_date = ""
+        request.huifu_id = "6666000108903754"
+        request.upper_huifu_id = "6666000108329682"
+        request.basic_info = get8fa45923559245789c08F98886e3abf4()
+        request.sign_user_info = getBd06bcb2Ffa441618a4d4f34c1b1b814()
+
+        # 所有非必填字段字典
+        extend_infos = build_extend_infos()
+
+        result = request.post(extend_infos)
+
+        print(result)
+        assert result["resp_code"] != ""
